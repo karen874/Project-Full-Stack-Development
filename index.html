@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ShopZone - Premium E-Commerce</title>
+		<meta
+			name="description"
+			content="ShopZone - Your trusted partner for quality products and exceptional shopping experience"
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/main.css" />
+	</head>
+	<body>
+		<nav
+			class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
+		>
+			<div class="container">
+				<a class="navbar-brand brand-logo" href="index.html">
+					<div class="brand-icon">
+						<i class="bi bi-shop"></i>
+					</div>
+					<span class="brand-text">ShopZone</span>
+				</a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="products.html"
+								>Products</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+					</ul>
+
+					<div class="navbar-nav">
+						<a class="nav-link cart-link" href="cart.html">
+							<i class="bi bi-cart"></i>
+							<span class="cart-badge">0</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="hero-section">
+			<div class="container">
+				<div class="row align-items-center min-vh-100">
+					<div class="col-lg-6">
+						<div class="hero-content animate-fade-in">
+							<h1 class="hero-title">
+								Welcome to
+								<span class="text-gradient">ShopZone</span>
+							</h1>
+							<p class="hero-subtitle">
+								Discover amazing products at unbeatable prices.
+								Your one-stop destination for quality shopping.
+							</p>
+							<div class="hero-buttons">
+								<a
+									href="products.html"
+									class="btn btn-primary btn-lg me-3 hover-lift"
+									>Shop Now</a
+								>
+								<a
+									href="about.html"
+									class="btn btn-outline-primary btn-lg hover-lift"
+									>Learn More</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="hero-image animate-scale-in">
+							<div class="floating-card">
+								<i
+									class="bi bi-bag-check display-1"
+									style="color: var(--primary-color)"
+								></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-5 bg-light">
+			<div class="container">
+				<div class="text-center mb-5">
+					<h2 class="section-title">Featured Products</h2>
+					<p class="section-subtitle">
+						Discover our most popular items
+					</p>
+				</div>
+
+				<div id="featuredProducts" class="row">
+					<div class="col-12 text-center">
+						<div class="loading-spinner">
+							<div
+								class="spinner-border text-primary"
+								role="status"
+							>
+								<span class="visually-hidden">Loading...</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-5">
+			<div class="container">
+				<div class="text-center mb-5">
+					<h2 class="section-title">Frequently Asked Questions</h2>
+					<p class="section-subtitle">
+						Find answers to common questions
+					</p>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div id="faqAccordion" class="faq-container"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-5 bg-news-letter-primary text-white">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<h3 class="mb-3">Stay Updated</h3>
+						<p class="mb-0">
+							Get the latest deals and product updates delivered
+							to your inbox.
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<form class="newsletter-form">
+							<div class="input-group">
+								<input
+									type="email"
+									class="form-control"
+									placeholder="Enter your email"
+									required
+								/>
+								<button class="btn btn-light" type="submit">
+									Subscribe
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-dark text-light py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 mb-4">
+						<div class="d-flex align-items-center mb-3">
+							<div class="brand-icon me-2">
+								<i class="bi bi-shop"></i>
+							</div>
+							<span class="h4 mb-0">ShopZone</span>
+						</div>
+						<p class="text-light">
+							Your trusted partner for quality products and
+							exceptional shopping experience.
+						</p>
+					</div>
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-md-6">
+								<h6 class="text-uppercase fw-bold">
+									Quick Links
+								</h6>
+								<ul class="list-unstyled">
+									<li>
+										<a href="index.html" class="text-light"
+											>Home</a
+										>
+									</li>
+									<li>
+										<a
+											href="products.html"
+											class="text-light"
+											>Products</a
+										>
+									</li>
+									<li>
+										<a href="about.html" class="text-light"
+											>About</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<h6 class="text-uppercase fw-bold">Contact</h6>
+								<p class="text-light mb-1">
+									<i class="bi bi-envelope me-2"></i
+									>support@shopzone.com
+								</p>
+								<p class="text-light">
+									<i class="bi bi-telephone me-2"></i>+961 12
+									345 678
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="my-4" />
+				<div class="text-center">
+					<p class="text-light mb-0">
+						&copy; 2025 ShopZone. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
