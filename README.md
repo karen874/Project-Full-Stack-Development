@@ -15,6 +15,13 @@ This project uses the [Fake Store API](https://fakestoreapi.com) to retrieve pro
 
 ---
 
+## Prerequisites
+
+- Visual Studio Code
+- [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) installed in VS Code to serve the project locally
+
+---
+
 ## Project Description
 
 ShopZone is a responsive front-end e-commerce application built with HTML, CSS, and JavaScript. It allows users to:
